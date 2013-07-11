@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 " Bundles
-Bundle 'gmarik/vundle' " Let vundle manage vundle
+Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-sensible'
 
 filetype plugin indent on
