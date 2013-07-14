@@ -7,6 +7,14 @@ call vundle#rc()
 " Bundles
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-sensible'
+Bundle 'anavarro/minibufexpl'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'mattn/zencoding-vim'
+Bundle 'groenewege/vim-less'
+Bundle 'tpope/vim-fugitive'
+Bundle 'garbas/vim-snipmate'
+Bundle 'tpope/vim-surround'
+Bundle 'MarcWeber/vim-addon-mw-utils'
 
 filetype plugin indent on
 
