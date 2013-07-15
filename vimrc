@@ -15,6 +15,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'garbas/vim-snipmate'
 Bundle 'tpope/vim-surround'
 Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'hsitz/VimOrganizer'
 
 filetype plugin indent on
 
