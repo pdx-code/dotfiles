@@ -10,6 +10,7 @@ ZSH_THEME="robbyrussell"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias t="~/dotfiles/bin/todo-cli/todo.sh -d ~/dotfiles/todo.cfg"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -45,3 +46,4 @@ plugins=(git extract)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+export PATH=~/dotfiles/bin:$PATH
