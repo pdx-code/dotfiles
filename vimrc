@@ -16,6 +16,7 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'tpope/vim-surround'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'hsitz/VimOrganizer'
+Bundle 'vim-scripts/vimwiki'
 
 filetype plugin indent on
 
