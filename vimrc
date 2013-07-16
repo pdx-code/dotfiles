@@ -37,5 +37,8 @@ set expandtab
 
 " Mappings
 " ____________________________
+let mapleader=","
 
 imap jj <Esc>
+nmap <Left> :bp<cr>
+nmap <Right> :bn<cr>
