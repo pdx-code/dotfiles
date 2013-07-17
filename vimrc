@@ -17,6 +17,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'hsitz/VimOrganizer'
 Bundle 'vim-scripts/vimwiki'
+Bundle 'tpope/vim-haml'
 
 filetype plugin indent on
 
