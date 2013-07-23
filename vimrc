@@ -33,8 +33,8 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
-" set backupdir=~/.vim/backup/
-" set directory=~/.vim/backup/
+set backupdir=~/.vim/backup/
+set directory=~/.vim/backup/
 
 " Mappings
 " ____________________________
