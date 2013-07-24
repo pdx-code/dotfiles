@@ -17,6 +17,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'hsitz/VimOrganizer'
 Bundle 'vim-scripts/vimwiki'
+Bundle 'vim-scripts/tlib'
 Bundle 'tpope/vim-haml'
 
 filetype plugin indent on
@@ -38,6 +39,8 @@ set directory=~/.vim/backup/
 
 " Mappings
 " ____________________________
+
+let g:user_zen_leader_key = '<c-d>'
 let mapleader=","
 
 imap jj <Esc>
