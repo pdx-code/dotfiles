@@ -5,29 +5,37 @@ set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 " Bundles
+" ____________________________
+
 Bundle 'gmarik/vundle'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'vim-scripts/tlib'
+
+Bundle 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
+
 Bundle 'tpope/vim-sensible'
 Bundle 'anavarro/minibufexpl'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mattn/zencoding-vim'
 Bundle 'groenewege/vim-less'
 Bundle 'tpope/vim-fugitive'
-Bundle 'garbas/vim-snipmate'
+
 Bundle 'tpope/vim-surround'
-Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'hsitz/VimOrganizer'
 Bundle 'vim-scripts/vimwiki'
-Bundle 'vim-scripts/tlib'
 Bundle 'tpope/vim-haml'
+Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on
-
 
 " Settings
 " ____________________________
 
 set nu
-set background=dark
+set background=light
+
+set cursorline
 
 set tabstop=2
 set shiftwidth=2
@@ -46,3 +54,5 @@ let mapleader=","
 imap jj <Esc>
 nmap <Left> :bp<cr>
 nmap <Right> :bn<cr>
+
+nmap <c-l> :let &background = (&background == "dark"? "light" : "dark")<cr>
