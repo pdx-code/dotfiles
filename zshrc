@@ -45,5 +45,9 @@ plugins=(git extract)
 
 source $ZSH/oh-my-zsh.sh
 
+source ~/.rvm/scripts/rvm
 # Customize to your needs...
 export PATH=~/dotfiles/bin:$PATH
+export EDITOR='vim'
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
