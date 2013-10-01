@@ -18,8 +18,10 @@ Bundle 'tpope/vim-sensible'
 Bundle 'anavarro/minibufexpl'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/emmet-vim'
 Bundle 'groenewege/vim-less'
 Bundle 'tpope/vim-fugitive'
+Bundle 'Raimondi/delimitMate'
 
 Bundle 'tpope/vim-surround'
 Bundle 'hsitz/VimOrganizer'
@@ -27,6 +29,7 @@ Bundle 'vim-scripts/vimwiki'
 Bundle 'tpope/vim-haml'
 Bundle 'altercation/vim-colors-solarized'
 
+Bundle 'kchmck/vim-coffee-script'
 filetype plugin indent on
 
 " Settings
@@ -34,8 +37,6 @@ filetype plugin indent on
 
 set nu
 set background=light
-
-set cursorline
 
 set tabstop=2
 set shiftwidth=2
@@ -48,7 +49,6 @@ set directory=~/.vim/backup/
 " Mappings
 " ____________________________
 
-let g:user_zen_leader_key = '<c-d>'
 let mapleader=","
 
 imap jj <Esc>
