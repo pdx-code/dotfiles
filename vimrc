@@ -46,6 +46,11 @@ set expandtab
 set backupdir=~/.vim/backup/
 set directory=~/.vim/backup/
 
+set undofile
+set undodir=~/.vim/undo
+set undolevels=1000
+set undoreload=10000
+
 " Mappings
 " ____________________________
 
