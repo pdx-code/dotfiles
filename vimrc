@@ -13,6 +13,7 @@ Bundle 'vim-scripts/tlib'
 
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
+Bundle 'kien/ctrlp.vim'
 
 Bundle 'tpope/vim-sensible'
 Bundle 'anavarro/minibufexpl'
