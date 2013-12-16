@@ -8,9 +8,11 @@ call vundle#rc()
 " ____________________________
 
 Bundle 'tpope/vim-sensible'
+Bundle 'bilalq/lite-dfm'
 Bundle 'gmarik/vundle'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'vim-scripts/tlib'
+Bundle 'vim-scripts/tComment'
 
 Bundle 'farseer90718/vim-taskwarrior'
 Bundle 'bling/vim-airline'
@@ -23,6 +25,7 @@ Bundle 'SirVer/ultisnips'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-markdown'
 Bundle 'kien/ctrlp.vim'
 
 " Bundle 'anavarro/minibufexpl'
@@ -63,6 +66,7 @@ set undoreload=10000
 
 if has('gui_running')
   set guioptions-=T
+  set guioptions-=m
 endif
 
 colorscheme solarized
@@ -80,11 +84,15 @@ nmap <leader>cb :bd<CR>
 nmap <silent> <leader>b :NERDTreeToggle<CR>
 nmap <c-l> :let &background = (&background == "light"? "dark" : "light")<cr>
 
+" LiteDFM (Lite Distraction Free Mode)
+" ____________________________
+nnoremap <F1> :LiteDFMToggle<CR>i<Esc>`^
+
 " Airline Status line
 " ____________________________
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
-" CtrlP 
+" CtrlP
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
