@@ -12,6 +12,7 @@ ZSH_THEME="robbyrussell"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # alias t="~/dotfiles/bin/todo-cli/todo.sh -d ~/dotfiles/todo.cfg"
 alias mux=tmuxinator
+alias tmux="TERM=screen-256color-bce tmux"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -42,7 +43,7 @@ alias mux=tmuxinator
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git extract mux)
+plugins=(git extract mux tmux)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -52,4 +53,4 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
