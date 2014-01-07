@@ -49,7 +49,7 @@ filetype plugin indent on
 " ____________________________
 
 set nu
-set background=light
+set background=dark
 
 set tabstop=2
 set shiftwidth=2
@@ -67,9 +67,9 @@ set undoreload=10000
 if has('gui_running')
   set guioptions-=T
   set guioptions-=m
+  colorscheme solarized
 endif
 
-colorscheme solarized
 " Mappings
 " ____________________________
 
@@ -91,8 +91,11 @@ nnoremap <F1> :LiteDFMToggle<CR>i<Esc>`^
 " Airline Status line
 " ____________________________
 
+" let g:airline_theme=
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
+let g:airline_left_sep=''
+let g:airline_right_sep=''
 
 " CtrlP
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
