@@ -14,7 +14,7 @@ Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'vim-scripts/tlib'
 Bundle 'vim-scripts/tComment'
 
-Bundle 'farseer90718/vim-taskwarrior'
+" Bundle 'farseer90718/vim-taskwarrior'
 Bundle 'bling/vim-airline'
 
 " Bundle 'garbas/vim-snipmate'
@@ -74,6 +74,7 @@ endif
 " ____________________________
 
 let mapleader=","
+let maplocalleader = "-"
 
 imap jj <Esc>
 nmap <PageDown> :bn<cr>
