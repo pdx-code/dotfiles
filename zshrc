@@ -6,13 +6,15 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
+# ZSH_THEME="alanpeabody"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # alias t="~/dotfiles/bin/todo-cli/todo.sh -d ~/dotfiles/todo.cfg"
 alias mux=tmuxinator
-alias tmux="TERM=screen-256color-bce tmux"
+alias tmux="tmux -2"
+alias pyserver="python -m SimpleHTTPServer"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -47,10 +49,13 @@ plugins=(git extract mux tmux)
 
 source $ZSH/oh-my-zsh.sh
 
+export TERM=screen-256color
+
 # source ~/.rvm/scripts/rvm
 # Customize to your needs...
 # export PATH=~/dotfiles/bin:$PATH
 export EDITOR='vim'
 
+PATH=$PATH:/usr/sbin
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
