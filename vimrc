@@ -59,10 +59,12 @@ set expandtab
 set backupdir=~/.vim/backup/
 set directory=~/.vim/backup/
 
-set undofile
-set undodir=~/.vim/undo
-set undolevels=1000
-set undoreload=10000
+if v:version > 703
+  set undofile
+  set undodir=~/.vim/undo
+  set undolevels=1000
+  set undoreload=10000
+endif
 
 if has('gui_running')
   set guioptions-=T
