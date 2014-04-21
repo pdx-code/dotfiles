@@ -67,8 +67,10 @@ set undoreload=10000
 if has('gui_running')
   set guioptions-=T
   set guioptions-=m
-  colorscheme solarized
 endif
+
+let g:solarized_termtrans = 1
+colorscheme solarized
 
 " Mappings
 " ____________________________
